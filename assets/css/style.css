@@ -476,7 +476,7 @@ header .btn-menu .btn-3 button:hover
 }
 .cards-two-section .cards-container-two .cards button
 {
-    padding: 3px 10px;
+    padding: 5px 10px;
     outline: none;
     border: none;
     border-radius: 7px;
@@ -706,6 +706,7 @@ header .btn-menu .btn-3 button:hover
 .table-container .l-b-data h4
 {
     color: rgba(128, 128, 128, 0.507);
+    white-space: nowrap;
 }
 .table-container .l-b-data .btn-cont
 {
@@ -1221,13 +1222,18 @@ header .btn-menu .btn-3 button:hover
     background:var(--background-color);
     display: flex;
     justify-content: space-between;
-    
+    align-items: center;
+    text-align: center;
 }
 .copyright-section .c-s.one
 {
     display: flex;
     align-items: center;
     color:  rgba(128, 128, 128, 0.459);
+}
+.copyright-section .designed-by h3
+{
+    color: rgba(255, 255, 255, 0.623);
 }
 .copyright-section .c-s.two
 {
@@ -1265,6 +1271,10 @@ header .btn-menu .btn-3 button:hover
         /* background-color: rebeccapurple; */
         flex-basis: 100%;
         flex-direction: row;
+    }
+    .contc-container .card-first .card-first-data .btn-card
+    {
+        padding: 5.5px;
     }
 }
 @media(max-width:1400px)
@@ -1345,6 +1355,21 @@ header .btn-menu .btn-3 button:hover
     {
         font-size: 15px;
     }
+    .cards-section .cards-container .card i 
+    {
+        font-size: 20px;
+    }
+    .cards-two-section .cards-container-two .cards button i
+    {
+        font-size: 20px;
+    }
+}
+@media(max-width:800px)
+{
+    .copyright-section
+    {
+        flex-direction: column;
+    }
 }
 @media(max-width:800px)
 {
@@ -1406,6 +1431,21 @@ header .btn-menu .btn-3 button:hover
     .contc-container .card-third .data-platform.four button i 
     {
         font-size: 15px;
+    }
+    .cards-section .cards-container .card i 
+    {
+        font-size: 20px;
+    }
+    .cards-two-section .cards-container-two .cards button i
+    {
+        font-size: 20px;
+    }
+    .table-container .l-b-data
+    {
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
     }
 }
 @media(max-width:576px)
@@ -1469,4 +1509,26 @@ header .btn-menu .btn-3 button:hover
     {
         font-size: 15px;
     }
+    .cards-two-section .cards-container-two .cards button i
+    {
+        font-size: 20px;
+    }
+    .cards-section .cards-container .card h1
+    {
+        font-size: 20px;
+    }
+    .copyright-section
+    {
+        flex-direction: column;
+    }
+    .copyright-section .c-s.two-1
+    {
+        padding:0px;
+        padding-right: 40px;
+    }
+    .cards-two-section .cards-container-two 
+    {
+        grid-template-columns:1fr;
+    }
+    
 }
